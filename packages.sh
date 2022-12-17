@@ -1,5 +1,9 @@
 #! /usr/bin/bash
 
+# Display manager
+pacman -S xdm-archlinux
+systemctl enable xdm-archlinux
+
 # Web
 pacman -S firefox
 
@@ -16,3 +20,8 @@ pacman -S vscode
 
 # Chat
 pacman -S discord
+
+# Misc
+pacman -S neofetch
+pacman -S htop
+
