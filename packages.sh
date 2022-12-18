@@ -4,6 +4,10 @@
 pacman -S fish
 chsh /usr/bin/fish
 
+# Network
+pacman -S networkmanager
+pacman -S iw
+
 # Display manager
 pacman -S xdm-archlinux
 systemctl enable xdm-archlinux
@@ -31,6 +35,8 @@ pacman -S alacritty
 # Development
 pacman -S git
 pacman -S vscode
+pacman -S python3
+pacman -S python-pip
 
 # Chat
 pacman -S discord
