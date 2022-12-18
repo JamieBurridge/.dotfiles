@@ -4,6 +4,16 @@
 pacman -S fish
 chsh /usr/bin/fish
 
+# Window manager
+pacman -S i3-gaps i3lock i3status dmenu
+
+# Audio
+pacman -S pulseaudio
+
+# Displays
+pacman -S arandr
+pacman -S xrandr
+
 # Network
 pacman -S networkmanager
 pacman -S iw
@@ -19,15 +29,17 @@ pacman -S pcmanfm
 pacman -S firefox
 
 # Theming
-pacman -S picom
-pacman -S nitrogen
-pacman -S lxappearance
+pacman -S picom # Blur, transparency, etc
+pacman -S nitrogen # wallpaper
+pacman -S lxappearance # gtk-themes
+
 pacman -S ttf-ubuntu-font-family
 pacman -S ttf-jetbrains-mono
 pacman -S ttf-font-awesome
+
 git clone https://aur.archlinux.org/bumblebee-status.git
 cd bumblebee-status
-makepkg -sicr
+makepkg -sicr ## status bar to replace i3status
 
 # Terminal
 pacman -S alacritty
