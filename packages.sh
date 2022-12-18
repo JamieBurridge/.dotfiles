@@ -46,10 +46,14 @@ makepkg -sicr ## status bar to replace i3status
 pacman -S alacritty
 
 # Development
-pacman -S git
 pacman -S vscode
+
+pacman -S git
+
 pacman -S python3
 pacman -S python-pip
+pacman -S nodejs
+npm install -g yarn 
 
 # Chat
 pacman -S discord
