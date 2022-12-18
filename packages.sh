@@ -1,5 +1,9 @@
 #! /usr/bin/bash
 
+# Shell
+pacman -S fish
+chsh /usr/bin/fish
+
 # Display manager
 pacman -S xdm-archlinux
 systemctl enable xdm-archlinux
@@ -14,6 +18,8 @@ pacman -S firefox
 pacman -S picom
 pacman -S nitrogen
 pacman -S lxappearance
+pacman -S ttf-ubuntu-font-family
+pacman -S ttf-jetbrains-mono
 
 # Terminal
 pacman -S alacritty
