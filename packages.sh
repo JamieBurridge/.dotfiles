@@ -11,8 +11,9 @@ pacman -S i3-gaps i3lock i3status dmenu
 pacman -S pulseaudio
 
 # Displays
-pacman -S arandr
-pacman -S xrandr
+pacman -S xrandr # Program to manage displays
+pacman -S arandr # GUI to manage displays
+pacman -S xbacklight # brightness
 
 # Network
 pacman -S networkmanager
