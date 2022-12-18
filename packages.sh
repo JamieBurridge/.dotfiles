@@ -4,12 +4,16 @@
 pacman -S xdm-archlinux
 systemctl enable xdm-archlinux
 
+# File manager
+pacman -S pcmanfm
+
 # Web
 pacman -S firefox
 
 # Theming
 pacman -S picom
 pacman -S nitrogen
+pacman -S lxappearance
 
 # Terminal
 pacman -S alacritty
