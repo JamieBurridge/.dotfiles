@@ -20,6 +20,10 @@ pacman -S nitrogen
 pacman -S lxappearance
 pacman -S ttf-ubuntu-font-family
 pacman -S ttf-jetbrains-mono
+pacman -S ttf-font-awesome
+git clone https://aur.archlinux.org/bumblebee-status.git
+cd bumblebee-status
+makepkg -sicr
 
 # Terminal
 pacman -S alacritty

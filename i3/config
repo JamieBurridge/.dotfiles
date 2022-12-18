@@ -200,7 +200,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # bar
 bar {
-  status_command i3status
+  status_command /usr/bin/bumblebee-status -t iceberg-rainbow -m memory datetime hostname battery xrandr layout 
     colors {
         background $bg-color
         separator #757575
