@@ -19,10 +19,6 @@ pacman -S xbacklight # brightness
 pacman -S networkmanager
 pacman -S iw
 
-# Display manager
-pacman -S xdm-archlinux
-systemctl enable xdm-archlinux
-
 # File manager
 pacman -S pcmanfm
 
