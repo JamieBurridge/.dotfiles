@@ -44,8 +44,12 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer -D pulse sset Master '5%+'"
 # bindsym XF86AudioLowerVolume exec --no-startup-id "amixer -D pulse sset Master '5%-'"
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 1 
-bindsym XF86MonBrightnessDown exec xbacklight -dec 1 
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 1 
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 1 
+
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -205,8 +209,8 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # bar
 bar {
-  status_command /usr/bin/bumblebee-status -t iceberg-rainbow -m memory datetime battery xrandr layout dunst network hostname 
-    colors {
+  status_command i3status
+  colors {
         background $bg-color
         separator #757575
         #                  border             background         text
@@ -227,7 +231,7 @@ bindsym $mod+f exec pcmanfm
 bindsym $mod+c exec code
 
 # Exec on start
-exec "setxkbmap -layout pt"
-exec --no-startup-id "~/.config/i3/scripts/displays.sh"
-exec --no-startup-id "nitrogen --restore &"
-exec --no-startup-id "picom &"
+exec setxkbmap -layout pt
+exec --no-startup-id bash ~/.config/i3/scripts/displays.sh
+exec --no-startup-id nitrogen --restore 
+exec --no-startup-id picom --config ~/.config/picom/picom.conf

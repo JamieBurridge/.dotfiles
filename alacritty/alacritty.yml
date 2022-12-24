@@ -4,7 +4,7 @@ font:
     style: Regular
 
   bold:
-    family: JetBrainsMono
+    family: JetBrainsMono 
     style: Bold
 
   italic:
@@ -15,7 +15,7 @@ font:
     family: JetBrainsMono
     style: Bold Italic
 
-  size: 10
+  size: 8
 
 colors:
     # Default colors
