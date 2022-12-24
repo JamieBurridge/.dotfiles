@@ -216,7 +216,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # bar
 bar {
-  status_command i3status
+  status_command ~/source-code/bumblebee-status/bumblebee-status -m pulseout pulsein brightness xrandr datetime layout dunst battery -t greyish-powerline
   colors {
         background $bg-color
         separator #757575
@@ -239,7 +239,7 @@ bindsym $mod+c exec code-oss
 
 # Exec on start
 exec setxkbmap -layout pt
-exec --no-startup-id bash ~/.config/i3/scripts/displays.sh
-exec --no-startup-id nitrogen --restore 
-exec --no-startup-id picom --config ~/.config/picom/picom.conf
-exec --no-startup-id dunst 
+exec --no-startup-id bash ~/.config/i3/scripts/displays.sh &
+exec --no-startup-id nitrogen --restore &
+exec --no-startup-id picom --config ~/.config/picom/picom.conf &
+exec --no-startup-id dunst &
