@@ -3,9 +3,6 @@
 # You can call this script like this:
 # $ ./brightnessControl.sh up
 # $ ./brightnessControl.sh down
-
-# Requires fontAwesome for icon
-
 # A modified version of Blaradox's brightness script
 
 function get_brightness {
