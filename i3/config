@@ -162,7 +162,6 @@ assign [class="discord"] $ws3
 assign [class="Slack"] $ws3
 assign [class="Pcmanfm"] $ws4
 assign [class="monero-core"] $ws6
-assign [class="net-runelite-client-^RuneLite"] $ws7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
