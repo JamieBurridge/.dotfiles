@@ -232,6 +232,7 @@ bindsym $mod+w exec firefox
 bindsym $mod+f exec pcmanfm
 bindsym $mod+c exec code-oss
 bindsym $mod+m exec monero-wallet-gui
+bindsym Print exec flameshot gui
 
 # Exec on start
 exec setxkbmap -layout pt
