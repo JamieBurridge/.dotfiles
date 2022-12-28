@@ -15,3 +15,7 @@
 #### Ricing
 
 Icons: https://www.gnome-look.org/p/1012265
+
+![image](https://user-images.githubusercontent.com/80159413/209847863-c5991535-1ff0-4de7-9651-2f0fbc0ab512.png)
+
+![image](https://user-images.githubusercontent.com/80159413/209848090-e804403f-c3d6-4f7e-92fc-81ce9b3b32d2.png)
