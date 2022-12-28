@@ -1,0 +1,49 @@
+# Web browsing
+firefox
+
+# Development
+vscode (code OSS)
+vim
+git
+nodejs
+yarn
+
+# Chatting
+discord
+slack
+teams-bin (microsoft teams)
+
+# Documents
+libreoffice 
+mupdf (pdf viewver)
+
+# Screenshots
+flameshot
+
+# Music
+spotify
+
+# Gaming
+runelite-launcher (client for runescape)
+
+# Ricing
+lxappearance
+bumblebee-status
+font-awesome
+ttf-ubuntu-font-family
+font-inconsolata-otf
+
+# Display
+arandr
+xrandr
+
+# Brightness
+brightnessctl
+
+# Sound
+pavucontrol
+pulseaudio
+
+
+
+
