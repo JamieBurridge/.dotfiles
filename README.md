@@ -6,6 +6,7 @@
 - [Alacritty Terminal](https://github.com/JamieBurridge/.dotfiles/tree/main/alacritty)
 - [Dunst (notifications)](https://github.com/JamieBurridge/.dotfiles/tree/main/dunst)
 - [Picom (compositor)](https://github.com/JamieBurridge/.dotfiles/tree/main/picom)
+- [Neovim](https://github.com/JamieBurridge/.dotfiles/tree/main/nvim)
 
 
 #### .local/bin (custom scripts)
