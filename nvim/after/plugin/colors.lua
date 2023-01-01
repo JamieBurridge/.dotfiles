@@ -1,4 +1,4 @@
-function ColorAll(color) 
+function ColorAll(color)
 	color = color or "kanagawa"
 	vim.cmd.colorscheme(color)
 end
