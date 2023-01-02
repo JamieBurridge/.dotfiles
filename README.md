@@ -20,6 +20,6 @@
 - Icons: https://www.gnome-look.org/p/1012265
 - GTK Theme: https://www.gnome-look.org/p/1574551/
 
-![image](https://user-images.githubusercontent.com/80159413/209847863-c5991535-1ff0-4de7-9651-2f0fbc0ab512.png)
+![image](https://user-images.githubusercontent.com/80159413/210276164-e8fbf34b-7b02-4d21-8ddc-56aed83d7fec.png)
 
-![image](https://user-images.githubusercontent.com/80159413/209850100-ef95eacf-c85d-4362-8ba2-b3c3da3e7c64.png)
+![image](https://user-images.githubusercontent.com/80159413/210276450-fab87279-71ad-4f59-b92c-3764d57cf6ce.png)
