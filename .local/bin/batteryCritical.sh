@@ -4,15 +4,10 @@ export DISPLAY=:0.0
 
 battery_low=20
 battery_percentage=$(acpi | cut -d':' -f2 | cut -d',' -f2 | cut -d'%' -f1 | xargs)
-isCharging=false
 
-if [[ $(acpi | cut -d':' -f2 | cut -d',' -f1 | xargs) -eq "Charging" ]]; then
-   isCharging=true 
+if [[ "$(acpi | cut -d':' -f2 | cut -d',' -f1 | xargs)" == "Discharging" && $battery_percentage -le $battery_low ]]; then
+    exec $(dunstify -a Battery "Battery at $battery_percentage%")
+    exec $(play ~/Audio/system-sounds/battery-critical.ogg)
 else
-   isCharging=false
+    echo ""
 fi
-
-if [[ $battery_percentage -le $battery_low && isCharging -eq false ]]; then
-    dunstify -a Battery "Battery at $battery_percentage%"
-fi
-

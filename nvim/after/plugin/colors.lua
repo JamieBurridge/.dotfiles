@@ -1,5 +1,5 @@
 function ColorAll(color)
-	color = color or "kanagawa"
+	color = color or "dracula"
 	vim.cmd.colorscheme(color)
 end
 

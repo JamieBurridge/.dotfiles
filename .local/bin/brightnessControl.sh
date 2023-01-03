@@ -22,15 +22,21 @@ function send_notification {
   exec dunstify -a Brightness -r 5555 "${brightness} / ${max_brightness}" 
 }
 
+function play_sound {
+  play -v 0.5 $HOME/Audio/system-sounds/button-pressed.ogg
+}
+
 case $1 in
   up)
     # increase the brightnessctl by 5%
     brightnessctl set +5% 
+    play_sound
     send_notification
     ;;
   down)
     # decrease the brightnessctl by 5%
     brightnessctl set 5%-
+    play_sound
     send_notification
     ;;
 esac

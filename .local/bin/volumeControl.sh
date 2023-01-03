@@ -23,8 +23,13 @@ function send_notification {
   fi
 }
 
+function play_sound {
+    play -v 0.5 $HOME/Audio/system-sounds/button-pressed.ogg
+}
+
 case $1 in
   up)
+    play_sound
     # set the volume on 
     pamixer -u
     # up the volume
@@ -32,11 +37,13 @@ case $1 in
     send_notification
     ;;
   down)
+    play_sound
     pamixer -u
     pamixer -d 5
     send_notification
     ;;
   mute)
+    play_sound
     # toggle mute
     pamixer -t 
     send_notification
