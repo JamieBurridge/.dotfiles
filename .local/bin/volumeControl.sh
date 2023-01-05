@@ -24,7 +24,7 @@ function send_notification {
 }
 
 function play_sound {
-    play -v 0.5 $HOME/Audio/system-sounds/button-pressed.ogg
+    play -v 0.3 $HOME/Audio/system-sounds/button-pressed.ogg
 }
 
 case $1 in

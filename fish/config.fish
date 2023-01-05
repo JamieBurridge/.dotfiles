@@ -10,9 +10,4 @@ set -gx EDITOR nvim
 alias calendar "calcurse"
 alias cal "calcurse"
 alias vim "nvim"
-alias xi "xbps-install"
-alias xr "xbps-remove"
-alias xq "xbps-query"
 
-# Paths
-fish_add_path ~/.emacs.d/bin/
