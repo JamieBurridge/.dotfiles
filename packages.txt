@@ -1,6 +1,10 @@
 # Web browsing
 firefox
 
+# Terminal
+alacritty
+fish (shell)
+
 # Development
 vscode (code OSS)
 vim
