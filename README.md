@@ -3,11 +3,13 @@
 #### .configs
 
 - [i3 Window Manager](https://github.com/JamieBurridge/.dotfiles/tree/main/i3)
+- [Polybar](https://github.com/JamieBurridge/.dotfiles/tree/main/polybar)
 - [Alacritty Terminal](https://github.com/JamieBurridge/.dotfiles/tree/main/alacritty)
-- [Dunst (notifications)](https://github.com/JamieBurridge/.dotfiles/tree/main/dunst)
-- [Picom (compositor)](https://github.com/JamieBurridge/.dotfiles/tree/main/picom)
+- [Tmux](https://github.com/JamieBurridge/.dotfiles/tree/main/tmux)
 - [Fish (shell)](https://github.com/JamieBurridge/.dotfiles/tree/main/fish)
 - [Neovim](https://github.com/JamieBurridge/.dotfiles/tree/main/nvim)
+- [Dunst (notifications)](https://github.com/JamieBurridge/.dotfiles/tree/main/dunst)
+- [Picom (compositor)](https://github.com/JamieBurridge/.dotfiles/tree/main/picom)
 
 
 #### .local/bin (custom scripts)
