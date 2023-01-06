@@ -4,6 +4,7 @@ firefox
 # Development
 vscode (code OSS)
 vim
+neovim
 git
 nodejs
 yarn
@@ -11,7 +12,9 @@ yarn
 # Chatting
 discord
 slack
-teams-bin (microsoft teams)
+
+# File manager
+pcmanfm
 
 # Documents
 libreoffice 
@@ -28,10 +31,13 @@ runelite-launcher (client for runescape)
 
 # Ricing
 lxappearance
-bumblebee-status
+polybar
 font-awesome
 ttf-ubuntu-font-family
 font-inconsolata-otf
+
+# Notifications
+dunst
 
 # Display
 arandr
@@ -43,7 +49,3 @@ brightnessctl
 # Sound
 pavucontrol
 pulseaudio
-
-
-
-
