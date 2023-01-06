@@ -4,6 +4,7 @@ firefox
 # Terminal
 alacritty
 fish (shell)
+tmux
 
 # Development
 vscode (code OSS)
@@ -34,6 +35,7 @@ spotify
 runelite-launcher (client for runescape)
 
 # Ricing
+picom (compositor)
 lxappearance
 polybar
 font-awesome
