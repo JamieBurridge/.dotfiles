@@ -11,7 +11,7 @@
 - [Dunst (notifications)](https://github.com/JamieBurridge/.dotfiles/tree/main/dunst)
 - [Picom (compositor)](https://github.com/JamieBurridge/.dotfiles/tree/main/picom)
 - [Spicetify](https://github.com/JamieBurridge/.dotfiles/tree/main/spicetify)
-- [Qutebrowser (W.I.P](https://github.com/JamieBurridge/.dotfiles/tree/main/qutebrowser)
+- [Qutebrowser (W.I.P)](https://github.com/JamieBurridge/.dotfiles/tree/main/qutebrowser)
 
 
 #### .local/bin (custom scripts)
