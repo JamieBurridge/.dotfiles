@@ -17,6 +17,9 @@
 #### .local/bin (custom scripts)
 - [brightnessControl](https://github.com/JamieBurridge/.dotfiles/blob/main/.local/bin/brightnessControl.sh)
 - [volumeControl](https://github.com/JamieBurridge/.dotfiles/blob/main/.local/bin/volumeControl.sh)
+- [batteryHigh](https://github.com/JamieBurridge/.dotfiles/blob/main/.local/bin/batteryHigh.sh)
+- [batteryCritical](https://github.com/JamieBurridge/.dotfiles/blob/main/.local/bin/batteryCritical.sh)
+- [copyConfigs](https://github.com/JamieBurridge/.dotfiles/blob/main/.local/bin/copyConfigs.sh)
 
 
 #### Ricing
