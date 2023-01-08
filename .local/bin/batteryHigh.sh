@@ -6,6 +6,7 @@ battery_high=80
 battery_percentage=$(acpi | cut -d':' -f2 | cut -d',' -f2 | cut -d'%' -f1 | xargs)
 
 if [[ "$(acpi | cut -d':' -f2 | cut -d',' -f1 | xargs)" == "Charging" && $battery_percentage -ge $battery_high ]]; then
+    exec $(play ~/Audio/system-sounds/battery-critical.ogg)
     exec $(dunstify -a Battery "Battery at $battery_percentage%")
 else
     echo ""

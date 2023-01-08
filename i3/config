@@ -57,7 +57,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -i -fn Ubuntu -nb "#222222" -sb "#7694f3" -nf "#C6D0F5" -sf "#000000"
+bindsym $mod+d exec --no-startup-id dbus-launch dmenu_run -i -fn Ubuntu -nb "#222222" -sb "#7694f3" -nf "#C6D0F5" -sf "#000000"
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
