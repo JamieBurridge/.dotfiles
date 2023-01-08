@@ -9,3 +9,5 @@ cp -r ~/.config/picom/ ~/source-code/.dotfiles/
 cp -r ~/.config/polybar/ ~/source-code/.dotfiles/
 cp -r ~/.config/tmux/ ~/source-code/.dotfiles/
 cp -r ~/.local/bin ~/source-code/.dotfiles/.local/
+cp -r ~/.config/spicetify/ ~/source-code/.dotfiles/
+cp -r ~/.config/qutebrowser/ ~/source-code/.dotfiles/

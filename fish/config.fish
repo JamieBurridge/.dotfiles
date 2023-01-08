@@ -11,3 +11,5 @@ alias calendar "calcurse"
 alias cal "calcurse"
 alias vim "nvim"
 
+
+fish_add_path /home/xross/.spicetify
