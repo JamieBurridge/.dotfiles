@@ -10,6 +10,8 @@
 - [Neovim](https://github.com/JamieBurridge/.dotfiles/tree/main/nvim)
 - [Dunst (notifications)](https://github.com/JamieBurridge/.dotfiles/tree/main/dunst)
 - [Picom (compositor)](https://github.com/JamieBurridge/.dotfiles/tree/main/picom)
+- [Spicetify](https://github.com/JamieBurridge/.dotfiles/tree/main/spicetify)
+- [Qutebrowser (W.I.P](https://github.com/JamieBurridge/.dotfiles/tree/main/qutebrowser)
 
 
 #### .local/bin (custom scripts)
@@ -22,6 +24,8 @@
 - Icons: https://www.gnome-look.org/p/1012265
 - GTK Theme: https://www.gnome-look.org/p/1574551/
 
-![image](https://user-images.githubusercontent.com/80159413/210276164-e8fbf34b-7b02-4d21-8ddc-56aed83d7fec.png)
+![image](https://user-images.githubusercontent.com/80159413/211215623-b3f29170-54a2-4498-bad8-1421ec87a50f.png)
 
-![image](https://user-images.githubusercontent.com/80159413/210276450-fab87279-71ad-4f59-b92c-3764d57cf6ce.png)
+![image](https://user-images.githubusercontent.com/80159413/211215544-2f6ffb84-b41c-4a0c-b9e8-b54f9308f85e.png)
+
+![image](https://user-images.githubusercontent.com/80159413/211215653-b7babb95-6751-45aa-a590-0c90d8a34ff3.png)
