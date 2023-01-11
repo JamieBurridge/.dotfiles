@@ -10,6 +10,6 @@ set -gx EDITOR nvim
 alias calendar "calcurse"
 alias cal "calcurse"
 alias vim "nvim"
-
+alias pdf "mupdf"
 
 fish_add_path /home/xross/.spicetify

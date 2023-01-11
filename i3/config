@@ -159,6 +159,7 @@ assign [class="Slack"] $ws3
 assign [class="Pcmanfm"] $ws4
 assign [class="monero-core"] $ws9
 for_window [class="^Spotify"] move --no-auto-back-and-forth to workspace $ws5
+for_window [class="^net-runelite-client-Runelite"] move --no-auto-back-and-forth to workspace $ws7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
