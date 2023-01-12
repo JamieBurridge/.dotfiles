@@ -5,6 +5,7 @@ if status is-interactive
 end
 
 set -gx EDITOR nvim
+set -gx BROWSER /usr/bin/firefox
 
 # Aliases
 alias calendar "calcurse"
