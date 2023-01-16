@@ -1,3 +1,8 @@
+# i3
+i3
+i3lock-color
+dmenu
+
 # Web browsing
 firefox
 
@@ -41,6 +46,7 @@ polybar
 font-awesome
 ttf-ubuntu-font-family
 font-inconsolata-otf
+spicetify
 
 # Notifications
 dunst
