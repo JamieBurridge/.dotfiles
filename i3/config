@@ -143,12 +143,6 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to update i3)
 bindsym $mod+Shift+r restart
 
-# keybinding in fancy rofi (automated):
-bindsym F1 exec ~/.config/i3/scripts/keyhint-2
-# alternative
-# keybinding list in editor:
-# bindsym $mod+F1 exec xed ~/.config/i3/keybindings
-
 # Backlight control
 bindsym XF86MonBrightnessUp exec brightnessctl set +5% && notify-send -r 5555 -a Brightness "$(brightnessctl | grep % | cut -d'(' -f2 | cut -d')' -f1)"
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%- && notify-send -r 5555 -a Brightness "$(brightnessctl | grep % | cut -d'(' -f2 | cut -d')' -f1)"
@@ -199,9 +193,6 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
-
-# open new empty workspace
-bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace
 
 # Multimedia Keys
 
@@ -316,9 +307,6 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # https://github.com/jceb/dex
 #exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 exec --no-startup-id dex --autostart --environment i3
-
-# start welcome app
-#exec --no-startup-id sh /usr/share/endeavouros/scripts/welcome --startdelay=3 
 
 # num lock activated
 #exec --no-startup-id numlockx on
