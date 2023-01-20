@@ -50,7 +50,7 @@ workspace_layout default
 new_window pixel 0
 
 # thin borders
-# hide_edge_borders both
+hide_edge_borders both
 
 # Set inner/outer gaps
 gaps inner 6
@@ -414,24 +414,16 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # Define colors variables:
-set $darkbluetrans	#08052be6
-set $darkblue		#08052b
-set $lightblue		#5294e2
-set $urgentred		#e53935
-set $white		#ffffff
-set $black		#000000
-set $purple		#e345ff
-set $darkgrey		#383c4a
-set $grey		#b0b5bd
-set $mediumgrey		#8b8b8b
-set $yellowbrown	#e1b700
+set $darkgrey		#222222
+set $white		    #f7f7f7
+set $black		    #000000
 
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
-client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
-client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
-client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
+client.focused		    $white	    $darkgrey	$white		$darkgrey	$darkgrey
+client.unfocused	    $darkgrey	$darkgrey	$white		$darkgrey	$darkgrey
+client.focused_inactive	$darkgrey	$darkgrey	$white		$darkgrey	$darkgrey
+client.urgent		    $darkgrey	$darkgrey	$white		$darkgrey	$darkgrey
 
 ############################################
 # bar settings (input comes from i3blocks) #
