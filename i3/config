@@ -198,11 +198,11 @@ bindsym $mod+a focus parent
 
 # volume
 # gradular volume control
-bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && notify-send -r 8888 -a Volume "$(amixer -D pulse get Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
-bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && notify-send -r 8888 -a Volume "$(amixer -D pulse get Master | grep 'Right:' | awk -F'[][]' '{ print $2 }')"
+bindsym XF86AudioRaiseVolume exec ~/.local/bin/volumeControl.sh up
+bindsym XF86AudioLowerVolume exec ~/.local/bin/volumeControl.sh down
 
 # mute
-bindsym XF86AudioMute exec amixer sset Master toggle && killall -USR1 i3blocks
+bindsym XF86AudioMute exec ~/.local/bin/volumeControl.sh mute 
 bindsym XF86AudioMicMute exec --no-startup-id pamixer --default-source -t 
 
 # audio control
@@ -216,7 +216,7 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+f exec /usr/bin/thunar
+bindsym $mod+f exec /usr/bin/pcmanfm
 bindsym $mod+c exec /usr/bin/code
 #bindsym Print exec scrot ~/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/$(date +"%Y-%m-%d-%T")-screenshot.png"
 bindsym Print exec flameshot gui
@@ -255,7 +255,7 @@ assign [class="(?i)firefox"] $ws1
 assign [class="Code"] $ws2
 assign [class="Slack"] $ws3
 assign [class="discord"] $ws3
-assign [class="Thunar"] $ws4
+assign [class="Pcmanfm"] $ws4
 for_window [class="^Spotify"] move --no-auto-back-and-forth to workspace $ws5
 assign [class="monero-wallet-gui"] $ws9
 assign [class="monero-core"] $ws9
