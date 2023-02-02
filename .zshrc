@@ -34,6 +34,7 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 export EDITOR='vim'
+export BROWSER='firefox'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -47,7 +48,3 @@ export EDITOR='vim'
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 alias i3config="vim ~/.config/i3/config"
-
-# Pywal
-export PATH="${PATH}:${HOME}/.local/bin/"
-(cat ~/.cache/wal/sequences &)
