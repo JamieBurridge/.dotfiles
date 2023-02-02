@@ -326,3 +326,5 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 ## Launch dmenu
 bindsym $mod+d exec --no-startup-id dmenu_run -i -nb "#222222" -sb "#323232" -nf "#f7f7f7" -sf "#f7f7f7"
 
+## Launch wal
+exec_always --no-startup-id wal -R
