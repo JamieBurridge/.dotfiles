@@ -2,6 +2,9 @@
 # config starts here: #
 #######################
 
+# Keyboard layout
+exec_always --no-startup-id setxkbmap pt
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -111,8 +114,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Backlight control
-bindsym XF86MonBrightnessUp exec brightnessctl set +5% && notify-send -r 5555 -a Brightness "$(brightnessctl | grep % | cut -d'(' -f2 | cut -d')' -f1)"
-bindsym XF86MonBrightnessDown exec brightnessctl set 5%- && notify-send -r 5555 -a Brightness "$(brightnessctl | grep % | cut -d'(' -f2 | cut -d')' -f1)"
+bindsym XF86MonBrightnessUp exec ~/.local/bin/brightnessControl.sh up
+bindsym XF86MonBrightnessDown exec ~/.local/bin/brightnessControl.sh down
 
 # change focus
 bindsym $mod+j focus left
@@ -182,9 +185,12 @@ bindsym XF86AudioMicMute exec --no-startup-id pamixer --default-source -t
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
-bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+f exec i3-msg workspace $ws4 && exec alacritty -e fff
+bindsym $mod+w exec /usr/bin/brave
+bindsym $mod+Shift+w exec /usr/bin/librewolf
+bindsym $mod+f exec /usr/bin/pcmanfm
 bindsym $mod+c exec /usr/bin/code
+bindsym $mod+n exec /usr/bin/liferea
+bindsym $mod+m exec /usr/bin/thunderbird
 bindsym Print exec flameshot gui
 
 # Power Profiles menu switcher (rofi)
@@ -201,8 +207,8 @@ set $ws2 "2: CODE"
 set $ws3 "3: CHAT"
 set $ws4 "4: FILES"
 set $ws5 "5: MUSIC"
-set $ws6 "6"
-set $ws7 "7"
+set $ws6 "6: RSS"
+set $ws7 "7: DOWNLOAD"
 set $ws8 "8"
 set $ws9 "9: CRYPTO"
 set $ws10 "10"
@@ -217,21 +223,23 @@ set $ws10 "10"
 #workspace $ws5 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
-assign [class="(?i)firefox"] $ws1
+assign [class="LibreWolf"] $ws1
+assign [class="Brave-browser"] $ws1
 assign [class="Code"] $ws2
 assign [class="Slack"] $ws3
 assign [class="discord"] $ws3
+assign [class="thunderbird"] $ws3
 assign [class="Pcmanfm"] $ws4
 for_window [class="^Spotify"] move --no-auto-back-and-forth to workspace $ws5
+assign [class="Audacious"] $ws5
+assign [class="Liferea"] $ws6
+assign [class="qBittorrent"] $ws7
 assign [class="monero-wallet-gui"] $ws9
 assign [class="monero-core"] $ws9
 
 #############################################
 # autostart applications/services on login: #
 #############################################
-
-# Compositor
-exec --no-startup-id picom --config ~/.config/picom/picom.conf 
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -257,20 +265,11 @@ exec --no-startup-id dex --autostart --environment i3
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
 exec --no-startup-id ~/.screenlayout/monitor.sh
 
-# set wallpaper
-exec --no-startup-id sleep 2 && nitrogen --restore
-#exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
-
 # set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
 
 # disable power saving (for example if using xscreensaver)
 #exec --no-startup-id xset -dpms
-
-# Desktop notifications
-exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
-# alternative if you installed aside with XFCE4:
-# exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 ##################
 # floating rules #
@@ -326,5 +325,7 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 ## Launch dmenu
 bindsym $mod+d exec --no-startup-id dmenu_run -i -nb "#222222" -sb "#323232" -nf "#f7f7f7" -sf "#f7f7f7"
 
-## Launch wal
-exec_always --no-startup-id wal -R
+#
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+exec_always --no-startup-id dunst -conf ~/.config/dunst/dunstrc
+exec_always --no-startup-id nitrogen --restore
